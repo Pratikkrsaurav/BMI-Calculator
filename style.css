@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 10%;
+    background-color: rgb(255, 239, 238);
+
+}
+
+h1{
+    font-size: 3.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 3vh;
+    text-shadow: 0.6vw 0.7vw 1vw rgba(0, 0, 0, 0.495);
+    word-spacing: 1vw;
+}
+
+form p{
+font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 1vh;
+}
+
+form button{
+    font-size: 1.7vw;
+    border-radius: 1.2vh;
+    padding: 0.3vw 0.9vw;
+    background-color: transparent;
+    border: 2px solid cyan;
+    color: cyan;
+    mix-blend-mode: difference;
+    font-weight: 600;
+    transition: all linear 0.4s;
+    position: relative;
+    overflow: hidden;
+    margin-top: 3vh;
+    margin-bottom: 5vh;
+}
+
+form button::after{
+    content: "";
+    height: 9vw;
+    width: 12vw;
+    border-radius: 50%;
+    background-color: cyan;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: all linear 0.4s;
+    z-index: -1;
+}
+
+form button:hover::after{
+    transform: translate(-50%, -50%);
+}
+form button:hover{
+    color: black;
+}
+
+#results{
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: black;
+}
+
+#weight-guide{
+    padding-top: 1vw;
+    font-size: 1.4vw;
+}
+
+h3{
+    font-size: 2vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: black;
+    padding-bottom: 1vh;
+}
+
+h5{
+    font-size: 1.5vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    color: black;
+    line-height: 2vw;
+    text-transform: capitalize;
+}
